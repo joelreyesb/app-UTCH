@@ -1,0 +1,16 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "loginDemoClass",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "JReyes",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
+  }
+}
