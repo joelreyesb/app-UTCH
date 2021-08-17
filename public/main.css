@@ -47,3 +47,9 @@ input[type="submit"] {
 .button a {
   color: #1a72cb;
 }
+
+.navbar{
+  background-color: orange;
+  padding: 0;
+  height: 50px;
+}

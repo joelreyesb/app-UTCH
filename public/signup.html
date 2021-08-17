@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>LogIn</title>
-  </head>
-  <body>
-    <form action="/register" method="POST">
-      <h2>Register</h2>
 
-      <div class="section">
-        <div class="title">User name</div>
-        <div class="field">
-          <input type="text" id="username" name="username" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Car</title>
+    <meta name="description" content="Página de seguros">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Secure <span class="logo__bold">Car</span>
+                    </h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="contacto.html" class="navegacion__enlace">Cotiza</a>
+                    <a href="login.html" class="navegacion__enlace">Iniciar sesion</a>
+                    <a href="signup.html" class="navegacion__enlace">Registrarse</a>
+                </nav>
+            </div>
         </div>
-      </div>
 
-      <div class="section">
-        <div class="title">Password</div>
-        <div class="field">
-          <input type="password" id="password" name="password" />
+        <div class="login">
+            <h2 class="no-margin">Registrarse</h2>
+            <p class="no-margin"></p>
+
+            <form class="formulariodos">
+                <div class="campo">
+                    <label class="campo__label" for="nombre">Usuario</label>
+                    <input class="campo__field" type="text" placeholder="Usuario" id="nombre">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="nombre">E-mail</label>
+                    <input class="campo__field" type="email" placeholder="Usuario" id="email">
+                </div>
+                <div class="campo">
+                    <label class="campo__label" for="password">Contraseña</label>
+                    <input class="campo__field" type="password" placeholder="Contraseña" id="password">
+                </div>
+            </form>
+
+            <div class="campo">
+              <a href="index.html" style="padding-left: 35%;">
+                <input type="submit" value="Registrarse" class="boton boton--primario">
+              </a>
+            </div>
         </div>
-      </div>
+    </header>
+    <script src="js/modernizr.js"></script>
+</body>
 
-      <div class="section">
-        <div class="button"><input type="submit" value="Register User" /></div>
-        <div class="button"><a href="Auth.html">Login</a></div>
-      </div>
-    </form>
-  </body>
 </html>

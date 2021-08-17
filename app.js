@@ -33,7 +33,7 @@ app.post("/register", (req, res) => {
     if (err) {
       res.status(500).send("ERROR: error when registering user");
     } else {
-      res.status(200).send("User registered successfully");
+      res.status(200).send("User Succesfully registered");
     }
   });
 });
@@ -60,7 +60,7 @@ app.post("/authenticate", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(3100, () => {
   console.log("Server started");
 });
 
